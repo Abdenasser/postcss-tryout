@@ -4,10 +4,12 @@ body{
   transform: translateX(30px);
 }
 
-.modal {
-  position: absolute 0 0 0 20px;
-}
+.container {  
+  .modal {
+    position: absolute 0 0 0 20px;
+  }
 
-.responsive {
-  font-size: responsive;
+  .responsive {
+    font-size: responsive;
+  }
 }
