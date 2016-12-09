@@ -3,7 +3,8 @@ const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
 
 var processors = [
-  require('postcss-nested'),
+  require('precss'),
+  //require('postcss-nested'),
   require('rucksack-css'),
   require('autoprefixer')({ browsers: ['last 5 versions'] }),
   // require('cssnano'),
