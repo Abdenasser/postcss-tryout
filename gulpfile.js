@@ -2,11 +2,14 @@ const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
 
-var autoprefixer = require('autoprefixer');
+var processors = [
+  require('autoprefixer')({ browsers: ['last 5 versions'] }),
+  require('cssnano')
+]
 
 gulp.task('css', function() {
   gulp.src('css/app.css')
-    .pipe(postcss([ autoprefixer({ browsers: ['last 5 versions'] }) ]))
+    .pipe(postcss(processors))
     .pipe(rename('bundle.css'))
     .pipe(gulp.dest('css/'))
 })
