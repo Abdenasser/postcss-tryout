@@ -7,3 +7,7 @@ body{
 .modal {
   position: absolute 0 0 0 20px;
 }
+
+.responsive {
+  font-size: responsive;
+}
